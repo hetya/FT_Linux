@@ -116,3 +116,45 @@ And for the /boot ext2:
 ```Shell
 sudo mkfs -v -t ext2 /dev/sdb2
 ```
+
+Since we won't reused the swap from the host we need to initialized the swap:
+
+```Shell
+mkswap /dev/sdb3
+```
+
+Now we will defined our LFS variable that point to the lfs partition :
+
+```Shell
+echo -e "export LFS='/mnt/lfs'\numask 022" | tee -a /home/linux/.bashrc /home/linux/.zshrc /root/.bashrc /root/.zshrc; $SHELL
+```
+
+Now we will create and mount our partition(filesystem):
+
+```Shell
+mkdir -pv $LFS
+mount -v -t ext4 /dev/sdb1 $LFS
+mkdir -v $LFS/boot
+mount -v -t ext2 /dev/sdb2 $LFS/boot
+```
+
+So when we reboot the host, partition are still mounted we will add this to the fstab:
+/etc/fstab
+
+````Shell
+/dev/sdb1  /mnt/lfs ext4   defaults      1     1
+/dev/sdb2  /mnt/lfs/boot ext2   defaults      1     1
+```
+
+Set the permissions:
+
+```Shell
+chown root:root $LFS
+chmod 755 $LFS
+````
+
+Check that the swap is on:
+
+```Shell
+/sbin/swapon -v /dev/sdb3
+```
