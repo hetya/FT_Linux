@@ -60,7 +60,7 @@ https://github.com/openssl/openssl/releases/download/openssl-3.4.1/openssl-3.4.1
 https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz
 https://www.cpan.org/src/5.0/perl-5.40.1.tar.xz
 https://distfiles.ariadne.space/pkgconf/pkgconf-2.3.0.tar.xz
-https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.5.tar.xz
+https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.15.tar.xz
 https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.7.tar.xz
 https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz
 https://www.python.org/ftp/python/doc/3.13.2/python-3.13.2-docs-html.tar.bz2
@@ -78,7 +78,7 @@ https://downloads.sourceforge.net/tcl/tcl8.6.16-html.tar.gz
 https://ftp.gnu.org/gnu/texinfo/texinfo-7.2.tar.xz
 https://www.iana.org/time-zones/repository/releases/tzdata2025a.tar.gz
 https://anduin.linuxfromscratch.org/LFS/udev-lfs-20230818.tar.xz
-https://www.kernel.org/pub/linux/utils/util-linux/v2.40/util-linux-2.40.4.tar.xz
+https://www.kernel.org/pub/linux/utils/util-linux/v2.33/util-linux-2.33.1.tar.xz
 https://github.com/vim/vim/archive/v9.1.1166/vim-9.1.1166.tar.gz
 https://pypi.org/packages/source/w/wheel/wheel-0.45.1.tar.gz
 https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz
