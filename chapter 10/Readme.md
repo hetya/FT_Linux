@@ -96,11 +96,11 @@ set timeout=5
 
 insmod part_gpt
 insmod ext2
-set root=(hd1,1)
+set root=(hd1,2)
 set gfxpayload=1024x768x32
 
 menuentry "GNU/Linux, Linux 6.16.1-lfs-12.4" {
-        linux   vmlinuz-6.16.1-<custom_version> root=/dev/sdb2 ro
+        linux   /vmlinuz-6.16.1-<custom_version> root=/dev/sdb1 ro
 }
 EOF
 ```
