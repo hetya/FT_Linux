@@ -19,6 +19,9 @@ wget --input-file=wget-list-sysv --continue --directory-prefix=$LFS/sources
 Since expat is not found, using the given url in the file we will download it ourselves,
 Since it is also mandatory to have a 4.x version for the kernel we will download it to :
 
+> WARNING :
+> At the time I have written this I was thinking about using a kernel 4.20 since I changed it and now I use a kernel 6.16.1, all the specific about the kernel 4.20 can be ignored
+
 <!-- github : https://github.com/torvalds/linux/releases/tag/v4.20 -->
 
 ```Shell
