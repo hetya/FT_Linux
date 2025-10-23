@@ -37,15 +37,15 @@ Network interface configuration file :
 Here enp0s3 is the name of my interface. The name of the inteface must be at the end of the file and for the `IFACE` variable:
 
 ```Shell
-cd /etc/sysconfig/
+cd /etc/sysconfig
 cat > ifconfig.enp0s3 << "EOF"
 ONBOOT=yes
 IFACE=enp0s3
 SERVICE=ipv4-static
-IP=192.168.1.2
-GATEWAY=192.168.1.1
+IP=10.0.2.15
+GATEWAY=10.0.2.2
 PREFIX=24
-BROADCAST=192.168.1.255
+BROADCAST=10.0.2.255
 EOF
 ```
 
@@ -75,7 +75,9 @@ echo "lfs-vm" > /etc/hostname
 cat > /etc/hosts << "EOF"
 # Begin /etc/hosts
 
-127.0.0.1  localhost lfs-vm
+127.0.0.1	localhost
+127.0.1.1	lfs-vm.myguest.virtualbox.org	lfs-vm
+
 ::1       localhost ip6-localhost ip6-loopback
 ff02::1   ip6-allnodes
 ff02::2   ip6-allrouters
