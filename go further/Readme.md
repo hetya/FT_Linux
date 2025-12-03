@@ -71,6 +71,18 @@ wget --directory-prefix=$LFS/sources https://anduin.linuxfromscratch.org/BLFS/bl
    7. [Wget](https://www.linuxfromscratch.org/blfs/view/svn/basicnet/wget.html)
    8. [cURL](https://www.linuxfromscratch.org/blfs/view/svn/basicnet/curl.html)
 
-6. Install [`git`](https://www.linuxfromscratch.org/blfs/view/svn/general/git.html)
+6. Install `lynx` and its dependency
+   In this order:
 
-7. Install [`zsh`](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/zsh.html)
+   1. [icu](https://www.linuxfromscratch.org/blfs/view/svn/general/icu.html)
+   2. [libxml2](https://www.linuxfromscratch.org/blfs/view/svn/general/libxml2.html)
+   3. [nghttp2-1](https://www.linuxfromscratch.org/blfs/view/svn/basicnet/nghttp2.html)
+   4. [libuv](https://www.linuxfromscratch.org/blfs/view/svn/general/libuv.html)
+   5. [libarchive](https://www.linuxfromscratch.org/blfs/view/svn/general/libarchive.html)
+   6. [cmake](https://www.linuxfromscratch.org/blfs/view/svn/general/cmake.html)
+   7. [brotli](https://www.linuxfromscratch.org/blfs/view/svn/general/brotli.html)
+   8. [lynx](https://www.linuxfromscratch.org/blfs/view/svn/basicnet/lynx.html)
+
+7. Install [`git`](https://www.linuxfromscratch.org/blfs/view/svn/general/git.html)
+
+8. Install [`zsh`](https://www.linuxfromscratch.org/blfs/view/svn/postlfs/zsh.html)
